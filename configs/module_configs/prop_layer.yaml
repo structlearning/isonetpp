@@ -1,0 +1,11 @@
+model_config:
+  propagation_layer_config:
+    node_state_dim: 10
+    edge_hidden_sizes: [20]
+    node_hidden_sizes: [10]
+    edge_net_init_scale: 0.1
+    node_update_type: gru
+    use_reverse_direction: True
+    reverse_dir_param_different: False
+    layer_norm: False
+    prop_type: embedding

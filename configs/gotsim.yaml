@@ -1,0 +1,8 @@
+model_config:
+  input_dim: 1
+  filters_1: 10
+  filters_2: 10
+  filters_3: 10
+  dropout: 0
+  is_sig: False
+name: gotsim

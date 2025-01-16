@@ -1,0 +1,6 @@
+model_config:
+  encoder_config:
+    node_hidden_sizes: [10]
+    node_feature_dim: 1
+    edge_hidden_sizes: null
+    edge_feature_dim: 1

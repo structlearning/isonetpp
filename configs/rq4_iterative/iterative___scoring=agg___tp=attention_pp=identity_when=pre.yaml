@@ -1,0 +1,21 @@
+inherit:
+  - ../module_configs/encoder.yaml
+  - ../module_configs/attention.yaml
+  - ../module_configs/prop_layer.yaml
+  - ../module_configs/aggregator.yaml
+
+model_config:
+  propagation_layer_config:
+    prop_type: embedding
+
+  propagation_steps: 5
+  refinement_steps: 3
+  alignment_feature_dim: 16
+  # scoring params
+  scoring: aggregated
+  # interaction params
+  interaction_alignment: attention
+  interaction_alignment_preprocessor_type: identity
+  interaction_when: pre
+
+name: gmn_iterative_refinement_scoring=agg___tp=attention_pp=identity_when=pre

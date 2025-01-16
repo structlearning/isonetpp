@@ -1,0 +1,12 @@
+model_config:
+  input_dim: 1
+  filters_1: 10
+  filters_2: 10
+  filters_3: 10
+  tensor_neurons: 10
+  bottle_neck_neurons: 10
+  dropout: 0
+  bins: 16
+  histogram: False
+
+name: simgnn

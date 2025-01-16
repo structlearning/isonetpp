@@ -1,0 +1,7 @@
+model_config:
+  n_layers: 5
+  hidden_dim: 10
+  output_dim: 10
+  input_dim: 1
+
+name: greed

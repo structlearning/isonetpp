@@ -1,0 +1,7 @@
+model_config:
+  aggregator_config:
+    node_hidden_sizes: [10]
+    graph_transform_sizes: [10]
+    input_size: [10]
+    gated: True
+    aggregation_type: sum

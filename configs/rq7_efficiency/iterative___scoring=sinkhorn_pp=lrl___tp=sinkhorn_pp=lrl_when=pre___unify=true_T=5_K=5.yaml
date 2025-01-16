@@ -1,0 +1,23 @@
+inherit:
+  - ../module_configs/encoder.yaml
+  - ../module_configs/sinkhorn.yaml
+  - ../module_configs/prop_layer.yaml
+
+model_config:
+  propagation_layer_config:
+    prop_type: embedding
+
+  propagation_steps: 5
+  refinement_steps: 5
+  alignment_feature_dim: 16
+  unify_scoring_and_interaction_preprocessor: True
+  # scoring params
+  scoring: set_aligned
+  scoring_alignment: sinkhorn
+  scoring_alignment_preprocessor_type: lrl
+  # interaction params
+  interaction_alignment: sinkhorn
+  interaction_alignment_preprocessor_type: lrl
+  interaction_when: pre
+
+name: gmn_iterative_refinement_scoring=sinkhorn_pp=lrl___tp=sinkhorn_pp=lrl_when=pre___unify=true_T=5_K=5

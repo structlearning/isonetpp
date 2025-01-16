@@ -1,0 +1,16 @@
+inherit:
+  - ../module_configs/encoder.yaml
+  - ../module_configs/sinkhorn.yaml
+  - ../module_configs/prop_layer.yaml
+
+model_config:
+  propagation_steps: 5
+  sinkhorn_feature_dim: 16
+  time_update_steps: 4
+  propagation_layer_config:
+    edge_embedding_dim: 20
+  encoder_config:
+    edge_hidden_sizes: [20]
+  interaction_when: pre
+
+name: edge_early_interaction_1_pre_T=4_K=5

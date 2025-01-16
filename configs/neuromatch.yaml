@@ -1,0 +1,10 @@
+model_config:
+  input_dim: 1
+  hidden_dim: 10
+  dropout: 0
+  n_layers: 3
+  conv_type: 'SAGE'
+  skip: 'learnable'
+  post_mp_dim: 64
+  margin: 0.5
+name: neuromatch

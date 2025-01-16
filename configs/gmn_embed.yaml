@@ -1,0 +1,9 @@
+inherit:
+  - module_configs/encoder.yaml
+  - module_configs/prop_layer.yaml
+  - module_configs/aggregator.yaml
+
+model_config:
+  propagation_steps: 5
+
+name: gmn_embed

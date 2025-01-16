@@ -1,0 +1,4 @@
+wandb:
+  project: benchmarking_einsmatch
+  entity: einsmatch
+  
